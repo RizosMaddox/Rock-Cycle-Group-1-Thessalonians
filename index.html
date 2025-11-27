@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Magma Rock Cycle</title>
-    <style>
-        body {
-            background-color: #ff9900; /* Magma orange */
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: 40px auto;
-            padding: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>The Magma Rock Cycle</h1>
-        <p>The rock cycle is a continuous process that describes how rocks change from one form to another over time. It begins with igneous rocks, which form when molten magma cools and solidifies. These rocks can then be broken down into sediments through weathering and erosion. The sediments are compacted and cemented together to form sedimentary rocks. With enough heat and pressure, sedimentary rocks can transform into metamorphic rocks, which have new textures and mineral structures. If metamorphic rocks melt, they return to magma, completing the cycle. This ongoing process is driven by Earth's internal heat and surface processes like erosion and tectonic activity.
-
-</p>       
+<html lang="en">
+  <head>
+   <style>
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows: 100px 200px 200px;
+      gap:30px;
+    }
+    .flex{
+      display: flex;
+    }
+    .box{
+    
+      border: 30px solid Blue;
+      height: 100px;
+      flex: 2;
+      background:yellow;
+      
+    }
+    .first{
+      flex:4;
+    }
+    .second{
+      flex:2;
+    }
+    .span{
+    grid-column:span 2;
+  
+    }
+    .row{
+    grid-row:span 4;
+    background: Blue;
+    
+    }
+    .Blue{
+      background:Blue;
+      200px
+    }
+    .green{
+      background: green;
+      height: 100px;
+    }
+   </style> 
+  </head>
+  <body>
+    <div class="grid">
+    <div class="row">  </div>
+    <div class="Blue"></div>
+    <div class="Blue">  </div>
+    <div class="span">
+      <div class="flex"> 
+      <div class="first box"></div>
+      <div class="second box"></div>
+      <div class="second box"></div>
+      </div>
+    </div>
+    <div class="green"> </div>
+    <div class="green"> </div>
+     <div class="green"> </div>
+    <div class="green"> </div>
+    
+    </div>
+  </body>
+</html>
